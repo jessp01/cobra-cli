@@ -1,4 +1,4 @@
-# Copyright 2013-2023 The Cobra Authors
+# Copyright 2013-2025 The Cobra Authors
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -12,46 +12,47 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
+---
 run:
   deadline: 5m
 
 linters:
   disable-all: true
   enable:
-    #- bodyclose
+    # - bodyclose
     # - deadcode ! deprecated since v1.49.0; replaced by 'unused'
-    #- depguard
-    #- dogsled
-    #- dupl
+    # - depguard
+    # - dogsled
+    # - dupl
     - errcheck
-    #- exhaustive
-    #- funlen
-    #- gochecknoinits
+    # - exhaustive
+    # - funlen
+    # - gochecknoinits
     - goconst
     - gocritic
-    #- gocyclo
+    # - gocyclo
     - gofmt
     - goimports
-    #- gomnd
-    #- goprintffuncname
+    # - gomnd
+    # - goprintffuncname
     - gosec
     - gosimple
     - govet
     - ineffassign
-    #- lll
+    # - lll
     - misspell
-    #- nakedret
-    #- noctx
+    # - nakedret
+    # - noctx
     - nolintlint
-    #- rowserrcheck
-    #- scopelint
+    # - rowserrcheck
+    # - scopelint
     - staticcheck
-    #- structcheck ! deprecated since v1.49.0; replaced by 'unused'
+    # - structcheck ! deprecated since v1.49.0; replaced by 'unused'
     - stylecheck
-    #- typecheck
+    # - typecheck
     - unconvert
-    #- unparam
+    # - unparam
     - unused
     # - varcheck ! deprecated since v1.49.0; replaced by 'unused'
-    #- whitespace
+    # - whitespace
   fast: false
